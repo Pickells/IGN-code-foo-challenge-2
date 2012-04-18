@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body
+			{
+				background-color:#A9F5F2;
+			}
+			
+			#cont
+			{
+			 background-color: #9cc;
+			 float: left;
+			 height: 100%;
+			 width: 100%;
+			 }
+
+			#header
+                {
+			 height: 100%;
+			 background-color:#777;
+                	 margin-bottom: 10px;
+                }
+
+			#lcol
+			{
+			 float: left;
+			 
+			 height: 100%;
+			 width: 20%;
+			 background-color: #493;
+			 margin-left: 1%;
+			 margin-bottom: 10px;
+			}
+
+			#center
+			{
+			 float: left;
+			
+			 height: 100%;
+			 width: 55%;
+			 background-color: #984;
+			 margin-left: 1%;
+			 margin-bottom: 10px;
+			}
+
+			#rcol
+			{
+			 float: left;
+			 
+			 height: 100%;
+			 width: 21%;
+			 background-color: #894;
+			 margin-left: 1%;
+			 margin-bottom: 10px;
+			}
+
+             #footer
+             {
+             height: 100%;
+             clear: both;
+			 background-color: #aaa;
+             }
+
+		</style>
+	</head>
+                
+
+<body>
+
+	<div id="cont">
+
+		<div id="header">
+			<h1 id="he1", style="text-align:center">Liquid layout</h1>
+		</div>
+		<div id="lcol">Left colomn <br />I will be in San Francisco from 27th of april till 1ist of may so if you want ( and i know I want ) i can visit IGN so we can talk :P</div>
+		<div id="center">
+			<div style="text-align:center">
+				<button onclick="liquid ()">Liquid</button>
+				<button onclick="res1 ()">1024x768</button>
+				<button onclick="res2 ()">1680x1050</button>
+				<br />
+				<h4>A liquid layout is a layout that resizes itself automaticaly when the size of the window is changed ... so basicaly when a webpage layout is liquid it doesn't matter what resolution your screen is, it will always fit.
+						but when the layout is not liquid it won't resize itself but it will stay the way it was initialized in the HTML code. so thats why i didn't understand this question when you asked for a liquid layout with fixed resolution.
+						its either that or there is something i dont know about HTML ( im still a biggener in HTML BTW ) . but now im just putting stuff here to fill the space so it doesnt look weird and to look like im realy writing something.
+						if your still reading then you should stop coz i dont know what to write anymore and i should stop too so i hope you like what you see :D </h4> 
+			</div>
+		</div>
+		<div id="rcol"><h5>I realy wanted to complete all the questions of  the code foo challenge but i dont have time, coz on the 19th of April im going on a vacation to the US till the 20th of May, and as you may already know i participated in the Code Foo challenge of last
+							year but there was a bit of issues that i think it will still be a problem. thats IF i get selected like last year.</h5></div>
+							
+		<div id="footer", style="text-align:center"><h6>This is a copyright by Pickells production ( i always wanted to do that :P )</h6></div> 
+	</div>
+	
+	<script type="text/javascript">
+		
+		function res1 ()
+		{
+			document.getElementById("he1").innerHTML="1024x768 layout";
+			
+			document.getElementById("header").style.height="50px";
+		
+			document.getElementById("cont").style.height="768px";
+			document.getElementById("cont").style.width="1024px";
+			
+			document.getElementById("lcol").style.height="668px";
+			document.getElementById("lcol").style.width="150px";
+			
+			document.getElementById("center").style.height="668px";
+			document.getElementById("center").style.width="665px";
+			
+			document.getElementById("rcol").style.height="668px";
+			document.getElementById("rcol").style.width="150px";
+			
+			document.getElementById("footer").style.height="15px";
+		}
+		
+		function res2 ()
+		{
+			document.getElementById("he1").innerHTML="1680x1050 layout";
+			
+			document.getElementById("header").style.height="50px";
+		
+			document.getElementById("cont").style.height="1050px";
+			document.getElementById("cont").style.width="1680px";
+			
+			document.getElementById("lcol").style.height="950px";
+			document.getElementById("lcol").style.width="400px";
+			
+			document.getElementById("center").style.height="950px";
+			document.getElementById("center").style.width="800px";
+			
+			document.getElementById("rcol").style.height="950px";
+			document.getElementById("rcol").style.width="400px";
+			
+			document.getElementById("footer").style.height="15px";
+		}
+		
+		function liquid ()
+		{
+			document.getElementById("he1").innerHTML="Liquid layout";
+			
+			document.getElementById("header").style.height="100%";
+		
+			document.getElementById("cont").style.height="100%";
+			document.getElementById("cont").style.width="100%";
+			
+			document.getElementById("lcol").style.height="100%";
+			document.getElementById("lcol").style.width="20%";
+			
+			document.getElementById("center").style.height="100%";
+			document.getElementById("center").style.width="55%";
+			
+			document.getElementById("rcol").style.height="100%";
+			document.getElementById("rcol").style.width="21%";
+			
+			document.getElementById("footer").style.height="100%";
+		}
+	</script>
+	
+	
+
+</body>
+</html>
